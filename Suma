@@ -1,0 +1,24 @@
+/*Este programa sirve para leer por teclado 10 numeros enteros y
+sumarlos*/
+#include<iostream>
+
+int main(){
+    //definicion de variables
+    int cont;
+    int numero;
+    int suma;
+    int salir;
+    //bucle de tipo for cont=cont+1 es lo mismo que cont++
+    //for(cont=10;cont>=0;cont--){....
+    for(cont=1;cont<10;cont=cont++){
+       std::cout<<"Dime un numero entero: ";
+       std::cin>>numero;
+       suma=suma+numero;
+                 
+    }
+    
+    std::cout<<"La suma es: "<<suma;
+    std::cout<<"Toca cualquier tecla";
+    std::cin>>salir;
+    return 0;
+}
