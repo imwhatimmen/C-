@@ -1,0 +1,21 @@
+//Vamos a aprender a hacer arrays
+using namespace std;
+/*Esto hace no repetir std siempre*/
+
+#include<iostream>
+//Cinco posiciones para guardar cinco numeros enteros
+int main(){
+    int changkyun[5];
+    int cont;
+    int salir;
+    for(cont=0;cont<5;cont++){
+       cout<<"Dime un numero guap@: ";
+       cin>>changkyun[cont];
+    }
+    cout<<"Mira mi bonito vector relleno: ";
+    for(cont=0;cont<5;cont++){
+       cout<<"changkyun["<<cont<<"]="<<changkyun[cont]<<endl;
+    }
+    cout<<"toca cualquier tecla: ";
+    cin>>salir;
+}
