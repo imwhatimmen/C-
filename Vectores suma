@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int vector1[5];
+    int vector2[5];
+    int vector_t[5];
+    int salir;
+//Rellenamos los vectores
+    for(int cont=0;cont<5;cont++){
+       cout<<"vector["<<cont<<"]=";
+       cin>>vector1[cont];
+    }
+    for(int cont=0;cont<5;cont++){
+       cout<<"vector["<<cont<<"]=";
+       cin>>vector2[cont];  
+    } 
+    for(int cont=0;cont<5;cont++){
+       vector_t[cont]=vector1[cont]+vector2[cont];
+    cout<<"La suma vale:"<<vector_t[cont];
+    }   
+    cout<<"presiona para salir y luego ENTER";
+    cin>>salir;
+    return 0;
+}
+
