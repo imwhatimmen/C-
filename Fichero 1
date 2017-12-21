@@ -1,0 +1,17 @@
+//FICHEROS
+#include<iostream>
+#include<fstream> //para los ficheros
+
+using namespace std;
+
+int main(){
+    //Abrimos el fichero
+    ofstream fichero("MiFichero.txt");      
+    fichero<<"Hola a todos soy Quion"<<endl;     
+    fichero<<"Encantado de coberle";      
+    fichero.close();
+    cout<<"Ya esta. Fichero cerrado";    
+          
+          
+  return 0;        
+}
