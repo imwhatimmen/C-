@@ -1,0 +1,18 @@
+//FICHEROS
+#include<iostream>
+#include<fstream> //para la lectura
+
+using namespace std;
+
+int main(){
+    //Abrimos el fichero
+    string mensaje;
+    int salir;
+    ifstream fichero("MiFichero.txt");  
+    fichero>>mensaje;
+    cout<<mensaje<<endl;
+    fichero.close(); //En este caso no es obligatorio
+    cin>>salir;
+          
+  return 0;        
+}
