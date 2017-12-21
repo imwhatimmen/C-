@@ -1,0 +1,21 @@
+//Leer lineas
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+int main (){
+    ifstream fichero("MiFichero.txt");
+    string mensaje;
+    int salir;
+    cout<<"El texto dice: "<<endl;
+    while(fichero.eof() !=1){
+       if(fichero.eof() !=1){
+         getline(fichero,mensaje);
+         cout<<mensaje;
+         cout<<endl;
+       }
+    }
+    cin>>salir;
+    
+}
