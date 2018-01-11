@@ -1,0 +1,17 @@
+//lectura hasta el final
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+    string linea;
+    int salir;
+    ifstream fichero("MiFichero.txt");
+    
+    while(fichero.eof()==0){ //marca de final
+      getline(fichero,linea);
+      cout<<linea<<endl;
+    }
+    fichero.close();
+    cin>>salir;
+    return 0;
+}
