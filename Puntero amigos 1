@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int medida(char aux[]){
+    int l=0;
+    while(aux[l]!='\0'){
+          l++;
+    }
+    return l;    
+}
+
+int main() {
+    char *lista[5];
+    int salir;
+    char aux[15];
+    int cont,l;
+    for(cont=0;cont<5;cont++){
+       printf("\nNombre amigo %i: ",cont);                     
+       scanf("%s",aux); //vector de letras, para guaradar el nombre del amigo provisionalmente
+       l=15; // l=medida(aux); aux variable temporal
+       lista[cont]=(char *) malloc(l*sizeof(char)); //char * filtrado del puntero
+       strcpy(lista[cont],aux); // te lo copia entero stringcopy                    
+    } 
+    for(cont=0;cont<5;cont++){
+       printf("\n%s",lista[cont]);                      
+    }
+
+    printf("\nToca cualquier tecla: ");
+    scanf("%i",&salir);  
+}
