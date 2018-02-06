@@ -1,0 +1,44 @@
+//Este programa trata sobre estructuras
+#include<iostream>
+using namespace std;
+
+int main(){
+    struct menu {
+       string primerPlato;
+       string segundoPlato;
+       string postre;
+       int calorias;
+    };
+    int cont,salir,suma;
+    menu bar[5];
+    for(cont=0;cont<5;cont++){
+       cout<<"MENU BAR"<<cont<<endl;                       
+       cout<<"El primer plato es: ";
+       cin>>bar[cont].primerPlato;
+       cout<<"El segundo plato es: ";
+       cin>>bar[cont].segundoPlato;
+       cout<<"El postre es: ";
+       cin>>bar[cont].postre;
+       cout<<"Calorias del menu: ";
+       cin>>bar[cont].calorias;
+    }
+  
+    cout<<"LOS MENUS SON: "<<endl;
+    for(cont=0;cont<5;cont++){
+       cout<<"El primer plato es "<<bar[cont].primerPlato<<" , el segundo es "<<bar[cont].segundoPlato<<" , el postre es "<<bar[cont].postre<<" y sus calorias son "<<bar[cont].calorias<<endl;                           
+    }
+    
+    for(cont=0;cont<5;cont=cont++){
+       cout<<"La suma de calorias: "<<endl;
+       cin>>bar[cont].calorias;
+       suma=suma+bar[cont].calorias;
+                 
+    }
+    cout<<"La suma es: "<<suma;
+    
+    
+     cout<<"Toca cualquier tecla para acabar";
+     cin>>salir;
+     
+}                 
+    
