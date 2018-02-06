@@ -1,0 +1,13 @@
+//Programas sobre manejo de memoria
+//Vamos a declarar 2 variables, a y b
+#include<stdio.h>
+
+int main(){
+    int a=3;
+    int b=2;
+    int salir;
+    printf("dirección de a= %x\n",&a);
+    printf("dirección de b= %x",&b);
+    scanf("%c",&salir);
+}
+
